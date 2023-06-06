@@ -13,9 +13,6 @@
     - Setelah instalasi selesai, buka file config/app.php dan tambahkan ServiceProvider dan Facade berikut ini:
       Di dalam 'providers' array:
       Jenssegers\Mongodb\MongodbServiceProvider::class,
-      Di dalam 'aliases' array:
-      'Moloquent' => Jenssegers\Mongodb\Eloquent\Model::class,
-      [catatan : Moloquent adalah Kelas yang mengimplementasikan fungsionalitas ORM (Object-Relational Mapping) untuk MongoDB, sehingga kita dapat menggunakan model Eloquent yang biasa digunakan dengan basis data relasional.]
     - Langkah selanjutnya buka file '.env' dan ubah konfigurasi database menjadi :
       DB_CONNECTION=mongodb
       DB_HOST=127.0.0.1
